@@ -1,1 +1,104 @@
-<h1>Nothing yet</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="output.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Index</title>
+</head>
+<body class="flex overflow-hidden">
+   <div class="sidebar shadow-2xl w-48 h-screen">
+      <div class="siadebar-head p-2 text-center text-blue-700 text-lg font-bold border-b-2 border-blue-700">FishDroid</div>
+      <div class="featurebtns-container">
+         <ul>
+            <a href="./index.html"><li class="p-1 pl-3 text-blue-700 font-semibold border-b border-gray-400 cursor-pointer hover:bg-slate-400 transition-all"><i class="fa-solid fa-table-columns mr-3"></i>Dashboard</li></a>
+            <a href="./add-fish.html"><li class="p-1 pl-3 text-blue-700 font-semibold border-b border-gray-400 cursor-pointer hover:bg-slate-400 transition-all"><i class="fa-solid fa-fish mr-3"></i>Manage Fish</li></a>
+            <a href="./add-user.html"><li class="p-1 pl-3 text-blue-700 font-semibold border-b border-gray-400 cursor-pointer hover:bg-slate-400 transition-all"><i class="fa-solid fa-users mr-3"></i>Manage User</li></a>
+            <a href="./fun-facts.html"><li class="p-1 pl-3 text-blue-700 font-semibold border-b border-gray-400 cursor-pointer hover:bg-slate-400 transition-all"><i class="fa-solid fa-lightbulb mr-3"></i>Fun Facts</li></a>
+            <a href="./add-quiz.html"><li class="p-1 pl-3 text-blue-700 font-semibold border-b border-gray-400 cursor-pointer hover:bg-slate-400 transition-all"><i class="fa-sharp fa-solid fa-pen-to-square mr-3"></i>Quizzes</li></a>
+            <a href="./add-term.html"><li class="p-1 pl-3 text-blue-700 font-semibold border-b border-gray-400 cursor-pointer hover:bg-slate-400 transition-all"><i class="fa-solid fa-book mr-3"></i>Terms</li></a>
+         </ul>
+      </div>
+   </div>
+
+   <div class="admin-feature-container w-full h-screen overflow-auto px-3">
+
+      <header class="w-full bg-blue-700 p-3 h-28 rounded-b-3xl mt flex justify-end items-start">
+         <div class="user-container flex items-center">
+            <div class="user-img-container w-7 h-7 relative bg-black rounded-full overflow-hidden">
+               <img class="absolute h-full w-full inset-0" src="../src/images/userprofile.PNG" alt="User profile">
+            </div>
+            <a href="#" class="userfullname text-white font-semibold text-sm ml-2">John Paul Vicente</a>
+         </div>
+      </header>
+
+      <div class="contents-container w-[95%] mt-[-60px] bg-slate-100 mx-auto rounded-lg min-h-[90vh]">
+         <h4 class="text-xl font-bold text-blue-700 p-3">Manage Technological Term</h4>
+         <div class="manage-header bg-slate-300 flex justify-between items-center px-4 py-2">
+            <p class="manage-header-title font-bold text-blue-700 text-lg">Technological Term List</p>
+            <button class="bg-blue-700 rounded-md font-semibold text-white px-5 py-1 hover:bg-white transition-all hover:text-blue-700"><i class="fa-solid fa-plus pr-2"></i>Add Term</button>
+         </div>
+         <div class=" bg-blue-700 flex px-5 py-1 border ">
+            <div class="text-white font-semibold w-[5%]">No</div>
+            <div class="text-white font-semibold w-[20%]">Term</div>   
+            <div class="text-white font-semibold w-[55%]">Description</div>
+            <div class="text-white font-semibold w-[20%]">Action</div>
+         </div>
+
+         <div class="fish-table border-b border-b-gray-400 bg-slate-100 flex px-5 py-1">
+            <div class="text-gray-800 flex items-center font-semibold w-[5%]">1</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[20%]">Aquacultures</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[55%]">Aquaculture is the cultivation of....</div>
+            <div class="text-blue-700 flex gap-3 items-center font-semibold text-center action w-[20%]">
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-green-500 hover:bg-green-500 hover:text-white transition-all"><i class="fa-solid fa-pencil pr-3"></i>Edit</button>
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-red-500 hover:bg-red-500 hover:text-white transition-all"><i class="fa-solid fa-trash pr-3"></i>Delete</button>
+            </div>
+         </div>
+
+         <div class="fish-table border-b border-b-gray-400 bg-slate-100 flex px-5 py-1">
+            <div class="text-gray-800 flex items-center font-semibold w-[5%]">2</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[20%]">Fish tagging</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[55%]">Fish tagging is a process of...</div>
+            <div class="text-blue-700 flex gap-3 items-center font-semibold text-center action w-[20%]">
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-green-500 hover:bg-green-500 hover:text-white transition-all"><i class="fa-solid fa-pencil pr-3"></i>Edit</button>
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-red-500 hover:bg-red-500 hover:text-white transition-all"><i class="fa-solid fa-trash pr-3"></i>Delete</button>
+            </div>
+         </div>
+
+         <div class="fish-table border-b border-b-gray-400 bg-slate-100 flex px-5 py-1">
+            <div class="text-gray-800 flex items-center font-semibold w-[5%]">3</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[20%]">Fish telemetry</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[55%]">Fish telemetry is a technique...</div>
+            <div class="text-blue-700 flex gap-3 items-center font-semibold text-center action w-[20%]">
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-green-500 hover:bg-green-500 hover:text-white transition-all"><i class="fa-solid fa-pencil pr-3"></i>Edit</button>
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-red-500 hover:bg-red-500 hover:text-white transition-all"><i class="fa-solid fa-trash pr-3"></i>Delete</button>
+            </div>
+         </div>
+
+         <div class="fish-table border-b border-b-gray-400 bg-slate-100 flex px-5 py-1">
+            <div class="text-gray-800 flex items-center font-semibold w-[5%]">4</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[20%]">Fish biotelemetry</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[55%]">Fish biotelemetry is the use...</div>
+            <div class="text-blue-700 flex gap-3 items-center font-semibold text-center action w-[20%]">
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-green-500 hover:bg-green-500 hover:text-white transition-all"><i class="fa-solid fa-pencil pr-3"></i>Edit</button>
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-red-500 hover:bg-red-500 hover:text-white transition-all"><i class="fa-solid fa-trash pr-3"></i>Delete</button>
+            </div>
+         </div>
+
+         <div class="fish-table border-b border-b-gray-400 bg-slate-100 flex px-5 py-1">
+            <div class="text-gray-800 flex items-center font-semibold w-[5%]">5</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[20%]">Fish tracking devices</div>
+            <div class="text-gray-800 flex items-center font-semibold w-[55%]">Fish tracking devices is the....</div>
+            <div class="text-blue-700 flex gap-3 items-center font-semibold text-center action w-[20%]">
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-green-500 hover:bg-green-500 hover:text-white transition-all"><i class="fa-solid fa-pencil pr-3"></i>Edit</button>
+               <button class="py-1 px-4 bg-slate-300 rounded-sm text-red-500 hover:bg-red-500 hover:text-white transition-all"><i class="fa-solid fa-trash pr-3"></i>Delete</button>
+            </div>
+         </div>
+                 
+         
+      </div>
+   </div>
+</body>
+</html>z
